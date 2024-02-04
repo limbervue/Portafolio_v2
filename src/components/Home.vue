@@ -178,16 +178,9 @@
     }
     @media (max-width: 412px) {
         .content-main{
-            position: relative;
-            &__contentInfo{
-                
-                
-                &__experience{
-                   height: 600px;
-                }
-               
-            }
-
+           min-height: 915px;
+           overflow: hidden;
+           position: relative;
         }
     }
 
