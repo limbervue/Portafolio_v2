@@ -176,6 +176,19 @@
 
         }        
     }
+    @media (max-width: 412px) {
+        .content-main{
+            position: relative;
+            &__contentInfo{
+                
+                
+                &__experience{
+                   height: 600px;
+                }
+               
+            }
 
+        }
+    }
 
 </style>
