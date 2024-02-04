@@ -37,8 +37,7 @@
         opacity: 0.7;
         height: 862px;
         overflow: auto;
-        position: relative;
-        bottom: -80px;
+        
     }
     .content_profile_foto{
         display: flex;
@@ -69,4 +68,12 @@
             align-items: center;
         }
     }
+
+    @media (max-width: 1274px) {
+        .content_profile{
+        
+            height: auto;
+        }
+    }
+    
 </style>

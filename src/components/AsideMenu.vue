@@ -28,6 +28,8 @@ function handleNavigation(routeName){
             
                 <li @click="handleNavigation('/')" class="aside-menu__items__item">Home</li>
 
+                <li @click="handleNavigation('/perfil')" class="aside-menu__items__item">Perfil</li>
+
                 <a href="https://wa.me/c/593961203563" target="_blank">
                     <li class="aside-menu__items__item">whatsapp</li>
                 </a>
@@ -45,7 +47,7 @@ function handleNavigation(routeName){
 
     position: fixed;
     top: -186px;
-    height: 208px;
+    height: 255px;
     background-color: #172d38;
     width: 170px;
     transition: all 0.3s;

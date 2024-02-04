@@ -5,6 +5,7 @@
     import AsideMenu from './AsideMenu.vue'
     import Exp from './Exp.vue';
     import HeaderMovil from './HeaderMovil.vue';
+    import Profile from './Profile.vue';
     import { useRoute } from 'vue-router';
     import { onMounted, ref, onUpdated } from 'vue';
     import router from '../router';
@@ -36,7 +37,7 @@
     const handleResize = () => {
         width.value = window.innerWidth;
 
-        if (width.value > 1200 && route.path === "/perfil") {
+        if (width.value > 1274 && route.path === "/perfil") {
             
             router.push('/');
         }
@@ -84,6 +85,11 @@
             <div class="content-main__contentInfo__description  content-main__contentInfo__about"> 
                 <router-view></router-view>
             </div>
+
+            <div v-if="$route.path === 'perfil'" class="content-main__contentInfo__profile  content-main__contentInfo__about"> 
+                <Profile/>
+            </div>
+
 
         </div>
         
@@ -134,6 +140,9 @@
         
             }
         }   
+        &__asideProfile{
+            display: block;
+        }
     }
 
     @media (max-width: 1874px) {

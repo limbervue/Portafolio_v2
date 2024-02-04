@@ -58,4 +58,12 @@
       
     }
 
+    @media (max-width: 1274px) {
+        .content_profile{
+        
+            height: auto;
+            top: -105px; 
+        }
+    }
+
 </style>
