@@ -28,7 +28,7 @@
         <h3>Participacion Vue3 - Prestamo</h3>
         <div class="image">
             <li v-for="img in prestamo" :key="img.id">
-                <img :src="`/images/${img.imageName}`">
+                <img :src="`images/${img.imageName}`">
             </li>
         </div>
 
@@ -60,7 +60,7 @@
         <h3>Retratos LimbertArt </h3>
         <div class="image">
             <li v-for="img in retratos" :key="img.id">
-                <img :src="`/images/${img.imageName}`">
+                <img :src="`images/${img.imageName}`">
             </li>
         </div>
        
